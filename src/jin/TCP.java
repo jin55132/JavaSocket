@@ -10,6 +10,7 @@ public class TCP {
 		// TODO Auto-generated method stub
 		
 		try {
+			// Local host 주소 알아내기
 			InetAddress address = InetAddress.getLocalHost();
 			
 			System.out.println("Local Host");
@@ -25,7 +26,9 @@ public class TCP {
 		
 		for(int i = 0; i < args.length; i ++)
 		{
+			
 			try{
+				//IP를 넣으면 DNS가 나오고 , DNS를 넣으면 IP가 나온다(N개)
 				InetAddress[] addressList = InetAddress.getAllByName(args[i]);
 				System.out.println(args[i] + ":");
 				//System.out.println("\t" + addressList[0].getHostName());
