@@ -12,7 +12,7 @@ public class TCP {
 		try {
 			// Local host 주소 알아내기
 			InetAddress address = InetAddress.getLocalHost();
-			
+					
 			System.out.println("Local Host");
 			System.out.println("\t" + address.getHostName());
 			System.out.println("\t" + address.getHostAddress());
@@ -28,6 +28,11 @@ public class TCP {
 		{
 			
 			try{
+				InetAddress inet = InetAddress.getByName("www.google.com");
+				System.out.println(inet.getHostAddress());
+				
+				byte a[] = inet.getAddress();
+				
 				//IP를 넣으면 DNS가 나오고 , DNS를 넣으면 IP가 나온다(N개)
 				InetAddress[] addressList = InetAddress.getAllByName(args[i]);
 				System.out.println(args[i] + ":");
