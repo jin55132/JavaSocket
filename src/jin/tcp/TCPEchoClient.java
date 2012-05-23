@@ -1,4 +1,4 @@
-package jin;
+package jin.tcp;
 
 import java.net.*;
 import java.io.*;

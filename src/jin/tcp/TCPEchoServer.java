@@ -1,4 +1,4 @@
-package jin;
+package jin.tcp;
 
 import java.io.IOException;
 import java.io.InputStream;
