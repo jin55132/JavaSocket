@@ -10,6 +10,7 @@ public class TCP {
 		// TODO Auto-generated method stub
 		
 		try {
+			
 			// Local host 주소 알아내기
 			InetAddress address = InetAddress.getLocalHost();
 					
