@@ -14,7 +14,7 @@ public class ThreadMain {
 			
 			port = 8080;
 			dispatcherName = "Pool";
-			protocolName = "Echo";
+			protocolName = "TimelimitEcho";
 		}
 		else {
 			

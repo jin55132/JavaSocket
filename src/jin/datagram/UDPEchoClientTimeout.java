@@ -27,7 +27,6 @@ public class UDPEchoClientTimeout {
 		// TImeout 후 Exceptino 발생
 		socket.setSoTimeout(TIMEOUT);
 		
-	
 		// 패킷 생성
 		DatagramPacket sendPacket = new DatagramPacket(bytesToSend, bytesToSend.length, serverAddress, servPort);
 		DatagramPacket receivePacket = new DatagramPacket(new byte[bytesToSend.length], bytesToSend.length);
